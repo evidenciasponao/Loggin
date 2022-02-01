@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin</title>
+</head>
+<body>
+    <form method="post">
+        <p>Ingreso al sistema de registro de solicitudes</p>
+        Usuario:
+        <br>
+        <input name="u">
+        <br>
+        Contraseña:
+        <br>
+        <input name="p" type="password">
+        <br>
+        <br>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Ingresar">
+            <a href="{{url_for('registro')}}" class="btn btn-primary">Registrar</a>
+        </div>
+
+</body>
+</html>
+

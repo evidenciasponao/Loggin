@@ -1,0 +1,49 @@
+<br>
+<form method="post" action="/autentication" enctype="multipart/form-data">
+
+    <div class="card">
+        <div class="card-header">
+            Registrar usuarios
+
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                
+                <div class="form-group">
+                    <label for="txtUsuario">Usuario:</label>
+                    <br>
+                    <input id="txtUsuario" class="form-control" type="text" name="txtUsuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="txtContraseña">Contraseña:</label>
+                    <br>
+                    <input id="txtContraseña" class="form-control" type="text" name="txtContraseña" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Agregar">
+                    <a href="{{url_for('loggin')}}" class="btn btn-primary">Regresar</a>
+                </div>
+
+            </p>
+        </div>
+    </div>
+
+
+</form>
+
+
+
+<!--     <br>
+<div class="form-group">
+    <label for="txtUsuario">Usuario:</label>
+    <input id="txtUsuario" class="form-control" type="text" name="txtUsuario">
+</div>
+<div class="form-group">
+    <label for="txtContraseña">Contraseña:</label>
+    <input id="txtContraseña" class="form-control" type="password" name="txtContraseña">
+</div>
+<div class="form-group">
+    <br>
+    <input type="submit" class="btn btn-success" value="Registrar">
+</div> -->
