@@ -23,6 +23,10 @@ def dash():
 def registro():
     return render_template('Registro.html')
 
+@app.route("/error")
+def errorConexion():
+    return render_template('ErrorConexion.html')
+
 @app.route('/', methods=['POST'])
 def Autenticate():
 
@@ -32,7 +36,7 @@ def Autenticate():
     cursor.execute("SELECT * FROM User WHERE username='" + username + "' and password='" + password + "'")
     data = cursor.fetchone()
     if data is None:
-        return "Usuario o contraseña incorrecta"
+        return render_template('ErrorConexion.html')
     else:
         return render_template('Dashboard.html')
 
